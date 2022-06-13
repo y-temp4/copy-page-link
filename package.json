@@ -1,0 +1,14 @@
+{
+  "name": "copy-page-link",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "4.7.3",
+    "vite": "2.9.12"
+  }
+}
