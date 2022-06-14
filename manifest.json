@@ -1,0 +1,30 @@
+{
+  "name": "Copy Page Link",
+  "description": "Copy page links in plain text.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "copy"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "commands": {
+    "copyDefault": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "MacCtrl+Shift+C"
+      },
+      "description": "Copy as plain"
+    },
+    "copyMd": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M",
+        "mac": "MacCtrl+Shift+M"
+      },
+      "description": "Copy as Markdown"
+    }
+  },
+  "permissions": ["activeTab", "clipboardWrite", "scripting"]
+}
