@@ -9,7 +9,7 @@ $ yarn
 $ yarn build
 ```
 
-Then test the extension at [chrome://extensions](chrome://extensions).
+Then test the extension at `chrome://extensions` .
 
 ## Deploy
 
