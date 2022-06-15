@@ -1,10 +1,21 @@
 {
   "name": "Copy Page Link",
-  "description": "Copy page links in plain text.",
+  "description": "Copy page title and URL",
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {
-    "default_title": "copy"
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   },
   "background": {
     "service_worker": "src/background.ts",
