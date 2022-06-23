@@ -25,14 +25,14 @@ chrome.commands.onCommand.addListener((cmd) => {
       const command = cmd as Command;
       async function run() {
         try {
-          // console.log("tabs", tabs);
           const [tab] = tabs;
-          const isAccessRestrictedUrl = !!tab.url?.startsWith("chrome://");
+          const isAccessRestrictedUrl =
+            !!tab.url?.startsWith("chrome://") ||
+            !!tab.url?.startsWith("https://chrome.google.com/webstore/");
           if (isAccessRestrictedUrl) return;
           await chrome.scripting.executeScript({
             target: { tabId: tab.id ?? 0 },
             func: injectedScript,
-            // func: injectedScript(command, tab.title ?? "", tab.url ?? ""),
             args: [command, tab.title ?? "", tab.url ?? ""],
           });
           const text = command === "copyDefault" ? "Plain" : "MD";
