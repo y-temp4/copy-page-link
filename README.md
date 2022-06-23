@@ -2,6 +2,8 @@
 
 Copy page title and URL.
 
+Chrome Web Store: https://chrome.google.com/webstore/detail/copy-page-link/cgbbegcmdjobachbnlinejnidbaeakli
+
 ## Development
 
 ```shell
